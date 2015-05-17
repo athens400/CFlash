@@ -43,12 +43,12 @@ You can also include the stylesheet located in webroot/css-folder to give the me
 License
 ------------------
 
-This software is free software and carries a MIT license.
+This software is free software and carries a MIT license
 
 
 
 History
------------------------------------
+-------------------------------
 
 v1.0.0 (2015-04-29)
 
