@@ -20,7 +20,7 @@ class CFlash
      * @return void
      */
      
-    public function setMessage($message)
+    public function setMessage($message = null)
     {
         if(isset($_SESSION)) 
         {
@@ -35,7 +35,9 @@ class CFlash
      */
     public function getMessage()
     {
-        return isset($_SESSION) ? (isset($_SESSION['flash-message']) ? $_SESSION['flash-message'] : null) : null;
+        $message = isset($_SESSION) ? (isset($_SESSION['flash-message']) ? $_SESSION['flash-message'] : null) : null;
+        $this->setMessage();
+        return $message;
     }
     
     public function error($message)

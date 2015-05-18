@@ -12,7 +12,7 @@ class CFlashAnax extends CFlash implements \Anax\DI\IInjectionAware
 {
     use \Anax\DI\TInjectable;
     
-    public function setMessage($message)
+    public function setMessage($message = null)
     {
             $this->session->set('flash-message', $message);
     }
@@ -24,7 +24,8 @@ class CFlashAnax extends CFlash implements \Anax\DI\IInjectionAware
      */
     public function getMessage()
     {
-        return $this->session->get('flash-message');
-    }
-    
+        $message = $this->session->get('flash-message');
+        $this->setMessage();
+        return $message;
+    } 
 }
