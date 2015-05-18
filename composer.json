@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "anax/mvc": "dev-master"
+        "anax/mvc": "2.0.4"
     },
     "autoload": {
         "psr-4": { "Ath400\\": "src/" }
