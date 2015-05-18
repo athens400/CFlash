@@ -10,7 +10,7 @@
             "role": "Developer"
         }
     ],
-    "require": {
+    "require-dev": {
         "php": ">=5.4",
         "anax/mvc": "dev-master"
     },
